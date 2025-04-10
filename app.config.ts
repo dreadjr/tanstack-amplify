@@ -13,7 +13,7 @@ export default defineConfig({
     ],
   },
   server: {
-    preset: 'aws-amplify',
+    preset: 'aws_amplify',
   },
   // https://nitro.build/deploy/providers/aws-amplify
 
