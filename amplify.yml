@@ -16,15 +16,16 @@ frontend:
     build:
       commands:
         - pnpm build
+        - amplifyPush --simple
   artifacts:
     baseDirectory: .amplify-hosting
     files:
       - "**/*"
-backend:
-  phases:
-    build:
-      commands:
-        - amplifyPush --simple
+# backend:
+#   phases:
+#     build:
+#       commands:
+#         - amplifyPush --simple
 # version: 1
 # backend:
 #   phases:
